@@ -1,0 +1,6 @@
+(define (problem redflix_problem)
+  (:domain redflix_domain)
+  (:objects )
+  (:init )
+  (:goal )
+)
