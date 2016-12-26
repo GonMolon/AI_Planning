@@ -7,6 +7,7 @@
   (:predicates (precedes ?x - content ?y - content)
                (parallel ?x - content ?y - content)
                (watched ?x - content ?w - time)
+               (to_watch ?x - content)
                (watchedsmthtoday))
   
   (:functions (contents_today)

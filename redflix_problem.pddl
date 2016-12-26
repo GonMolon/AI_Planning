@@ -79,8 +79,8 @@
 
   )
   (:goal
-    (forall  (?v - content)
-          (watched ?v somewhen)
+    (forall (?x - content)
+      (when (to_watch ?x) (watched ?x somewhen))
     )
   )
 )
