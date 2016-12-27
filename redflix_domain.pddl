@@ -14,7 +14,6 @@
               (totals_watched)
               (duration ?x - content))
 
-
   (:action watch_content
     :parameters (?x - content)
     :precondition (and (watched ?x never)
@@ -45,8 +44,8 @@
   (:action next_day
     :parameters ()
     :precondition (watchedsmthtoday)
-    :effect (and (= (contents_today) 0)
-                 (= (minutes_today) 0)
+    :effect (and (decrease (contents_today) (contents_today))
+                 (decrease (minutes_today) (minutes_today))
                  (not (watchedsmthtoday))
                  (forall (?x - content)
                     (and (when (watched ?x yesterday) (and (not (watched ?x yesterday)) 
