@@ -8,4 +8,4 @@ random: redflix_domain.pddl generator.py
 	ff -o redflix_domain.pddl -f redflix_random_problem.pddl
 
 clean:
-    rm redflix_random_problems.pddl
+	rm -f redflix_random_problem.pddl

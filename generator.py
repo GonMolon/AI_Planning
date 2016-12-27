@@ -89,7 +89,7 @@ def generateContent(n):
 
 
 def main():
-    n = randint(10, 100)
+    n = randint(10, 40)
     content = generateContent(n)
     generateRelations(content)
     print("(", "define", "(", "problem redflix_random_problem", ")")
