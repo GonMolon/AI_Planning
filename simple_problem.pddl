@@ -15,6 +15,10 @@
     (= (minutes_today) 0)
     (= (totals_watched) 0)
     (= (duration c1) 45) 
+    (= (duration c2) 45) 
+    (= (duration c3) 45) 
+    (= (duration c4) 45) 
+    (= (duration c5) 45) 
   )
 
   (:metric
@@ -22,9 +26,9 @@
   )
 
   (:goal
-    ;;(forall (?x - content)
-    ;;    (or (not (to_watch ?x)) (watched ?x somewhen))
-    ;;)
-        (watched c1 somewhen)
+    (forall (?x - content)
+        (or (not (to_watch ?x)) (watched ?x somewhen))
+    )
+    ;;    (watched c5 somewhen)
   )
 )
