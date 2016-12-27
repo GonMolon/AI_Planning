@@ -9,7 +9,7 @@
    ;;Movies
    ;;paralel1_ and paralel2_ are parelel seire and movie.
    paralel2_1 paralel2_2 paralel2_3 paralel2_4 - content
-   pelicula1 pelicula2 pelicula3- content
+   pelicula1 pelicula2 pelicula3 - content
 
 
 
@@ -44,12 +44,12 @@
 
     (parallel paralel1_1-1 paralel2_1) (parallel paralel1_1-2 paralel2_1)
     (parallel paralel2_1 paralel1_1-1) (parallel paralel2_1 paralel1_1-2)
-    (parallel paralel1_1-3 parallel2_2) (parallel paralel1_1-4 parallel2_2)
+    (parallel paralel1_1-3 paralel2_2) (parallel paralel1_1-4 paralel2_2)
     (parallel paralel1_1-5 paralel2_2) (parallel paralel2_2 paralel1_1-5)
     (parallel paralel2_2 paralel1_1-3) (parallel paralel2_2 paralel1_1-4)
-    (parallel paralel1_2-1 parallel2_3) (parallel paralel1_2-2 parallel2_3)
+    (parallel paralel1_2-1 paralel2_3) (parallel paralel1_2-2 paralel2_3)
     (parallel paralel2_3 paralel1_2-1) (parallel paralel2_3 paralel1_2-2)
-    (parallel paralel1_2-3 parallel2_4) (parallel paralel1_2-4 parallel2_4)
+    (parallel paralel1_2-3 paralel2_4) (parallel paralel1_2-4 paralel2_4)
     (parallel paralel2_4 paralel1_2-3) (parallel paralel2_4 paralel1_2-4)
 
     (= (contents_today) 0)
