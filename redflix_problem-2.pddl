@@ -9,6 +9,8 @@
    ;;Movies
    ;;paralel1_ and paralel2_ are parelel seire and movie.
    paralel2_1 paralel2_2 paralel2_3 paralel2_4 - content
+   pelicula1 pelicula2 pelicula3- content
+
 
 
   )
@@ -23,9 +25,13 @@
     (watched serie1_5 never) (watched serie1_6 never)
     (watched paralel2_1 somewhen) (watched paralel2_2 somewhen)
     (watched paralel2_3 never) (watched paralel2_4 never)
+    (watched pelicula1 never) (watched pelicula2 never)
+    (watched pelicula3 never)
 
-    (to_watch serie1_5) (to_watch paralel2_4)
+    (to_watch serie1_5) (to_watch paralel2_4) (to_watch pelicula3)
 
+    (precedes serie1_6 pelicula3) (precedes pelicula1 pelicula3)
+    (precedes pelicula2 pelicula3)
     (precedes paralel1_1-1 paralel1_1-2) (precedes paralel1_1-2 paralel1_1-3)
     (precedes paralel1_1-3 paralel1_1-4) (precedes paralel1_1-4 paralel1_1-5)
     (precedes paralel1_1-5 paralel1_2-1) (precedes paralel1_2-1 paralel1_2-2)
@@ -39,6 +45,7 @@
     (parallel paralel1_1-1 paralel2_1) (parallel paralel1_1-2 paralel2_1)
     (parallel paralel2_1 paralel1_1-1) (parallel paralel2_1 paralel1_1-2)
     (parallel paralel1_1-3 parallel2_2) (parallel paralel1_1-4 parallel2_2)
+    (parallel paralel1_1-5 paralel2_2) (parallel paralel2_2 paralel1_1-5)
     (parallel paralel2_2 paralel1_1-3) (parallel paralel2_2 paralel1_1-4)
     (parallel paralel1_2-1 parallel2_3) (parallel paralel1_2-2 parallel2_3)
     (parallel paralel2_3 paralel1_2-1) (parallel paralel2_3 paralel1_2-2)
@@ -53,6 +60,9 @@
     (= (duration paralel1_2-2) 45) (= (duration paralel1_2-3) 45) (= (duration paralel1_2-4) 45)
     (= (duration paralel2_1) 100) (= (duration paralel2_2) 110)
     (= (duration paralel2_3) 95) (= (duration paralel2_4) 120)
+    (= (duration serie1_1) 40) (= (duration serie1_2) 40) (= (duration serie1_3) 40)
+    (= (duration serie1_4) 40) (= (duration serie1_5) 40) (= (duration serie1_6) 40)
+    (= (duration pelicula1) 90) (= (duration pelicula2) 85) (= (duration pelicula3) 110)
   )
 
   (:metric
