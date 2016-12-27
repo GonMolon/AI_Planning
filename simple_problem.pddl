@@ -5,20 +5,37 @@
   )
 
   (:init
+    ;;to_watch
     (to_watch c5)
+    (to_watch c3)
+
+    ;;watched
     (watched c1 never)
     (watched c2 never)
     (watched c3 never)
     (watched c4 never)
     (watched c5 never)
-    (= (contents_today) 0)
-    (= (minutes_today) 0)
-    (= (totals_watched) 0)
+
+    ;;precedes
+    (precedes c1 c2)
+    (precedes c2 c3)
+    (precedes c4 c5)
+
+    ;;parallel
+    (parallel c5 c1)
+    (parallel c1 c5)
+
+    ;;duration
     (= (duration c1) 45) 
     (= (duration c2) 45) 
     (= (duration c3) 45) 
     (= (duration c4) 45) 
     (= (duration c5) 45) 
+    
+    ;;domain functions
+    (= (contents_today) 0)
+    (= (minutes_today) 0)
+    (= (totals_watched) 0)
   )
 
   (:metric
@@ -29,6 +46,5 @@
     (forall (?x - content)
         (or (not (to_watch ?x)) (watched ?x somewhen))
     )
-    ;;    (watched c5 somewhen)
   )
 )
