@@ -27,3 +27,7 @@
 *.exe
 *.out
 *.app
+
+/.idea
+redflix_random_problem.pddl
+.DS_Store
