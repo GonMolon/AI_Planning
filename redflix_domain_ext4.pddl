@@ -35,7 +35,6 @@
     :effect (and (watched ?x today)
                  (watched ?x somewhen)
                  (not (watched ?x never))
-                 (increase (contents_today) 1)
                  (increase (minutes_today) (duration ?x))
                  (increase (totals_watched) 1)
                  (watchedsmthtoday))
@@ -44,8 +43,7 @@
   (:action next_day
     :parameters ()
     :precondition (watchedsmthtoday)
-    :effect (and (decrease (contents_today) (contents_today))
-                 (decrease (minutes_today) (minutes_today))
+    :effect (and (decrease (minutes_today) (minutes_today))
                  (not (watchedsmthtoday))
                  (forall (?x - content)
                     (when (watched ?x yesterday) (and (not (watched ?x yesterday)) (watched ?x before)))

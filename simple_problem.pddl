@@ -7,7 +7,10 @@
   (:init
     ;;to_watch
     (to_watch c5)
+    (to_watch c4)
     (to_watch c3)
+    (to_watch c2)
+    (to_watch c1)
 
     ;;watched
     (watched c1 never)
@@ -17,20 +20,15 @@
     (watched c5 never)
 
     ;;precedes
-    (precedes c1 c2)
-    (precedes c2 c3)
-    (precedes c4 c5)
 
     ;;parallel
-    (parallel c5 c1)
-    (parallel c1 c5)
 
     ;;duration
-    (= (duration c1) 45) 
-    (= (duration c2) 45) 
-    (= (duration c3) 45) 
-    (= (duration c4) 45) 
-    (= (duration c5) 45) 
+    (= (duration c1) 75) 
+    (= (duration c2) 75) 
+    (= (duration c3) 75) 
+    (= (duration c4) 75) 
+    (= (duration c5) 75) 
     
     ;;domain functions
     (= (contents_today) 0)
