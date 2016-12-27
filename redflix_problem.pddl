@@ -76,8 +76,13 @@
     (precedes harry_potter-3 harry_potter-4) (precedes harry_potter-4 harry_potter-5)
     (precedes harry_potter-5 harry_potter-6) (precedes harry_potter-6 harry_potter-7)
 
-
+    (= (contents_today) 0)
+    (= (minutes_today) 0)
+    (= (totals_watched) 0)
   )
+
+  (:metric minimize (totals_watched))
+
   (:goal
     (forall  (?v - content)
           (watched ?v somewhen)
