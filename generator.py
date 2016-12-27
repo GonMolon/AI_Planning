@@ -21,12 +21,12 @@ class Content:
             print("    (", "parallel", self.name, x, ")")
 
 
-word_list = ["nalgo", "tokay", "corky", "elev", "tori", "dove", "peto", "dat", "busby", "fyn", "date", "sikh", "pump",
+word_list = ["nalgo", "tokay", "corky", "elev", "tori", "dove", "peto", "dat", "busby", "fyn", "date", "pepe", "pump",
              "toga", "mch", "alem", "sofar", "pest", "digby", "marin", "rigor", "clem", "casey", "omak", "punic",
              "rumba", "linen", "shorn", "sloop", "meris", "ken", "herta", "qum", "oath", "axing", "regel", "filer",
              "leat", "exor", "kvass", "brawl", "chit", "goral", "parle", "vet", "chico", "lakm", "pomp", "jane",
              "offal", "heed", "fez", "gipsy", "sit", "supt", "hasp", "diu", "heth", "elko", "cyra", "algar", "petra",
-             "malwa", "butes", "eyre", "eyas", "chimu", "lefty", "coble", "coven", "whig", "picky", "brie", "part",
+             "malwa", "butes", "eyre", "biene", "chimu", "lefty", "coble", "coven", "whig", "picky", "brie", "part",
              "keres", "tub", "abo", "rod", "shack", "thymi", "kies", "hang", "oken", "troll", "carin", "fluff", "dec",
              "swink", "eur", "zombi", "lear", "engle", "motor", "aback", "fri", "pence", "liest", "gink", "ear",
              "raven", "breaking", "bad", "house", "cards", "game", "thrones", "silicon", "valley"]
