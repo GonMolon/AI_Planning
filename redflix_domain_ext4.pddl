@@ -30,7 +30,6 @@
                                 )
                            )
                        )
-                       (< (contents_today) 3)
                        (<= (+ (minutes_today) (duration ?x)) 200)
                   )
     :effect (and (watched ?x today)
