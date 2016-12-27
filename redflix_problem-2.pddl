@@ -15,6 +15,9 @@
 
   )
   (:init
+
+    ;;watched
+
     (watched paralel1_1-1 somewhen)
     (watched paralel1_1-2 somewhen)
     (watched paralel1_1-3 somewhen)
@@ -38,10 +41,12 @@
     (watched pelicula2 never)
     (watched pelicula3 never)
 
+    ;;to_watch
     (to_watch serie1_5)
     (to_watch paralel2_4)
     (to_watch pelicula3)
 
+    ;;Precedes
     (precedes serie1_6 pelicula3)
     (precedes pelicula1 pelicula3)
     (precedes pelicula2 pelicula3)
@@ -62,6 +67,7 @@
     (precedes serie1_4 serie1_5)
     (precedes serie1_5 serie1_6)
 
+     ;;Parallel
     (parallel paralel1_1-1 paralel2_1)
     (parallel paralel1_1-2 paralel2_1)
     (parallel paralel2_1 paralel1_1-1)
@@ -81,6 +87,7 @@
     (parallel paralel2_4 paralel1_2-3)
     (parallel paralel2_4 paralel1_2-4)
 
+    ;;Functions
     (= (contents_today) 0)
     (= (minutes_today) 0)
     (= (totals_watched) 0)

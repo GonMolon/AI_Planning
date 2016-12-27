@@ -27,6 +27,8 @@
 
   )
   (:init
+
+    ;;watched
     (watched game_thrones-1-1 somewhen)
     (watched game_thrones-1-2 somewhen)
     (watched game_thrones-1-3 somewhen)
@@ -108,7 +110,7 @@
     (watched harry_potter-7 never)
     (watched inception never)
 
-
+    ;;to_watch
     (to_watch game_thrones-2-2)
     (to_watch breaking_bad-1-8)
     (to_watch star_trek-1-4)
@@ -118,7 +120,7 @@
     (to_watch star_wars-7)
     (to_watch harry_potter-2)
 
-
+    ;;precedes
     (precedes game_thrones-1-1 game_thrones-1-2)
     (precedes game_thrones-1-2 game_thrones-1-3)
     (precedes game_thrones-1-3 game_thrones-1-4)
@@ -190,6 +192,7 @@
     (precedes harry_potter-5 harry_potter-6)
     (precedes harry_potter-6 harry_potter-7)
 
+    ;;functions
     (= (contents_today) 0)
     (= (minutes_today) 0)
     (= (totals_watched) 0)
